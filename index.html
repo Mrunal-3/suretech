@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SureTech</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body id="home">
+<header>
+    <div class="logoBox">
+        <img src="image/logo.png" alt="logo">
+    </div>
+    <div class="tabs">
+        <a href="#products"  class="tab-btn">Products</a>
+        <a href="#aboutus"  class="tab-btn">About us</a>
+        <a href="#services"  class="tab-btn">Services</a>
+        <a href="#media"  class="tab-btn">Media</a>
+    </div>
+    <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+          <ul id="menu">
+            <li><a href="#products"  class="tab-btn">Products</a></li>
+            <li><a href="#aboutus"  class="tab-btn">About us</a></li>
+            <li><a href="#services"  class="tab-btn">Services</a></li>
+            <li><a href="#media"  class="tab-btn">Media</a></li>
+          </ul>
+         </div>
+    </nav>
+</header>
+<section class="bannerSection">
+    <div class="bannerImg">
+        <img src="image/banner.png" alt="banner">
+    </div>
+    <div class="bannerContent">
+        <div class="wrapper">
+            <div class="previousarrowframe">
+                <a href=""><img src="image/previous-arrow.png" alt=""></a>
+            </div>
+            <h1>Elevating Excellence <br>Together</h1>
+            <p>Industry-leading Provider of Quality <br>Products Expert Services and Uninterrupted <br>Support</p>
+            <div class="nextarrowframe">
+                <a href=""><img src="image/next-arrow.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="aboutSection" id="aboutus">
+    <div class="wrapper">
+        <div class="secHeading">
+            <ul><li><h4>Meet Our Team</h4></li></ul>
+        </div>
+        <div class="resultTags">
+            <ul class="filter tagsSlider">
+                <li data-filtertarget="directors" class="filter-bttn active" onclick="filter(this)">Directors</li>
+                <li data-filtertarget="operations" class="filter-bttn" onclick="filter(this)">Operations</li>
+                <li data-filtertarget="sales" class="filter-bttn" onclick="filter(this)">Sales</li>
+                <li data-filtertarget="marketing" class="filter-bttn" onclick="filter(this)">Marketing</li>
+                <li data-filtertarget="services" class="filter-bttn" onclick="filter(this)">Services</li>
+                <li data-filtertarget="rentals" class="filter-bttn" onclick="filter(this)">Rentals</li>
+            </ul>
+        </div>
+        <div class="directorscontent" >
+            <div class="directorsfilter item1 directors">
+                <div class="directorCard">
+                    <div class="directorImg">
+                        <img src="image/card1.png" alt="card1">
+                    </div>
+                    <div class="directorInfo">
+                        <h3>Mr. Sunil Newatia</h3>
+                        <p>Chairman & Managing Director</p>
+                        <a href="" target="_blank"><img src="image/linkedinlogo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="directorscontent" >
+            <div class="directorsfilter item2 directors">
+                <div class="directorCard2">
+                    <div class="directorImg">
+                        <img src="image/card2.png" alt="card2">
+                    </div>
+                    <div class="directorInfo">
+                        <h3>Ms. Pallu Newatia</h3>
+                        <p>Director, Operations</p>
+                        <a href="" target="_blank"><img src="image/linkedinlogo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="faqsSec hideCTA" id="faqs">
+    <div class="faqsWrapper">
+        <div class="secHeading1">
+            <ul><li><h4>FAQs</h4></li></ul>
+        </div>
+        <div class="faq">
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">What is a backhoe loader?</button>
+              <div class="faq-answer">
+                <p>Quisque rutrum. Aenean imperdi. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">What is the difference between a backhoe and a loader?</button>
+              <div class="faq-answer">
+                <p>Quisque rutrum. Aenean imperdi. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">How does LiveLink work on a Backhoe?</button>
+              <div class="faq-answer">
+                <p>Quisque rutrum. Aenean imperdi. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">How much weight can a backhoe loader lift?</button>
+              <div class="faq-answer">
+                <p>Quisque rutrum. Aenean imperdi. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.</p>
+              </div>
+            </div>
+          </div>
+         </div>          
+        </div>
+    </div>
+</section>
+
+
+<section class="aboutSection" id="products">
+     <div class="wrapper">
+        <div class="resultTags">
+            <ul class="filter tagsSlider">
+                <li data-filtertarget="all" class="filter-bttn active" onclick="filter(this)">All</li>
+                <li data-filtertarget="blogs" class="filter-bttn" onclick="filter(this)">Blogs</li>
+                <li data-filtertarget="publications" class="filter-bttn" onclick="filter(this)">Publications</li>
+                <li data-filtertarget="news" class="filter-bttn" onclick="filter(this)">News</li>
+                <li data-filtertarget="casestudy" class="filter-bttn" onclick="filter(this)">Case Study</li>
+            </ul>
+        </div>
+        <div class="container">
+        <div class="allcontent" >
+            <div class="allfilter item1 blogs">
+                <div class="allCard">
+                    <div class="allImg">
+                        <img src="image/card3.png" alt="card1">
+                    </div>
+                    <div class="allInfo">
+                        <p>Mighty Machines: lack of machines in agriculture sector</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="allcontent" >
+            <div class="allfilter item2 blogs">
+                <div class="allCard">
+                    <div class="allImg">
+                        <img src="image/card3.png" alt="card1">
+                    </div>
+                    <div class="allInfo">
+                        <p>Mighty Machines: lack of machines in agriculture sector</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="allcontent" >
+            <div class="allfilter item3 publications">
+                <div class="allCard">
+                    <div class="allImg">
+                        <img src="image/card3.png" alt="card1">
+                    </div>
+                    <div class="allInfo">
+                        <p>Mighty Machines: lack of machines in agriculture sector</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="allcontent" >
+            <div class="allfilter item4 publications">
+                <div class="allCard">
+                    <div class="allImg">
+                        <img src="image/card3.png" alt="card1">
+                    </div>
+                    <div class="allInfo">
+                        <p>Mighty Machines: lack of machines in agriculture sector</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="allcontent" >
+            <div class="allfilter item5 news">
+                <div class="allCard">
+                    <div class="allImg">
+                        <img src="image/card3.png" alt="card1">
+                    </div>
+                    <div class="allInfo">
+                        <p>Mighty Machines: lack of machines in agriculture sector</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="allcontent" >
+            <div class="allfilter item6 casestudy">
+                <div class="allCard">
+                    <div class="allImg">
+                        <img src="image/card3.png" alt="card1">
+                    </div>
+                    <div class="allInfo">
+                        <p>Mighty Machines: lack of machines in agriculture sector</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<footer id="media">
+    <section class="footerSec">
+    <div class="footerHeading">
+        <div class="footer">
+            <div class="footer-section contact-info">
+                <ul>
+                    <li><img src="image/email.png" alt="Email"> info@suretech.com</li>
+                    <li><img src="image/phone.png" alt="Phone"> +12 3456 7890</li>
+                    <li><img src="image/location.png" alt="Location"> Find Dealer</li>
+                </ul>
+                <div class="product-services">
+                    <div class="products">
+                        <h3>Products</h3>
+                        <ul>
+                            <li>Earth Moving Equipment</li>
+                            <li>Foundation Equipment</li>
+                            <li>Attachment</li>
+                        </ul>
+                    </div>
+                    <div class="services">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Services</li>
+                            <li>Rentals</li>
+                            <li>Refurbishment</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>© SureTech Infrastructure Pvt. Ltd. - All rights reserved</p>
+            </div>
+            <div class="footer-section form-container">
+                <h3>Reach Out For Requirements</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName">Full Name<span>*</span></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Write your name">
+                        </div>
+                        <div class="form-group frame2">
+                            <label for="email">Email ID<span>*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Your email address">
+                            <label for="mobileNumber">Mobile Number</label>
+                            <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Your mobile no.">
+                        </div>
+                        <div class="form-group">
+                            <label for="requirement">Your Requirement</label>
+                            <textarea id="requirement" name="requirement" placeholder="Write your query"></textarea>
+                        </div>
+                        <button type="submit">Get Quotation ↗</button>
+                    </form>
+            </div>
+            <div class="part3">
+            <div class="footer-section links">
+                <div class="policies">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Shipping Policy</li>
+                    </ul>
+                </div>
+                <div class="other-links">
+                    <h3>Other Links</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Media</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="footer-section socialmedia">
+                    <div class="social-icons">
+                        <img src="image/youtube.png" alt="YouTube">
+                        <img src="image/facebook.png" alt="Facebook">
+                        <img src="image/maskgroup.png" alt="Blog">
+                        <img src="image/linnkedIn.png" alt="LinkedIn">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+ </body>
+</html>
